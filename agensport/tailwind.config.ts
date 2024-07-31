@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         'verde-oscuro': '#00452e',
-        'verde-claro': '#3eb44c',
+        'verde-claro': '#4ccf5e',
+        //#3eb44c otra propuesta para el verde-claro
       },
     },
   },
