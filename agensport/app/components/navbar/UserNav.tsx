@@ -14,10 +14,10 @@ const UserNav = () => {
     <div>
         {/* Desktop Navigation */}
         <div className="sm:flex hidden ">
-            <button className="rounded-full border border-verde-oscuro bg-white py-1.5 px-5 text-verde-oscuro transition-all hover:bg-verde-oscuro hover:text-white text-center text-xs font-bold font-sans flex items-center justify-center mr-2">
+            <button className="principal_btn text-xs ">
                 Iniciar sesión
             </button>
-            <button className="rounded-full border border-verde-oscuro bg-verde-oscuro py-1.5 px-5 text-white transition-all hover:bg-verde-claro hover:text-verde-oscuro text-center text-xs font-bold font-sans flex items-center justify-center">
+            <button className="secondary_btn text-xs ">
                 Registrarse
             </button>
         </div>
