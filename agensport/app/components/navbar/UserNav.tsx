@@ -3,6 +3,8 @@
 import { useState } from "react";
 import MenuLink from "./MenuLink"
 import ReactDOM from 'react-dom';
+import Link from "next/link";
+
 
 const UserNav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,12 +16,12 @@ const UserNav = () => {
     <div>
         {/* Desktop Navigation */}
         <div className="sm:flex hidden ">
-            <button className="principal_btn text-xs ">
+            <Link href="/login" className="principal_btn text-xs ">
                 Iniciar sesión
-            </button>
-            <button className="secondary_btn text-xs ">
+            </Link>
+            <Link href="/register" className="secondary_btn text-xs ">
                 Registrarse
-            </button>
+            </Link>
         </div>
 
         {/* Mobile Navigation */}

@@ -13,6 +13,11 @@ const config: Config = {
         'verde-claro': '#4ccf5e',
         //#3eb44c otra propuesta para el verde-claro
       },
+      backgroundImage: {
+        'header-gradient': 'linear-gradient(180deg, #f0f8fc 0%, #cce7f8 100%)',
+        'content-gradient': 'radial-gradient(circle, #e6f2f7 0%, #cce7f8 100%)',
+        'footer-gradient': 'linear-gradient(180deg, #cce7f8 0%, #b3d9f7 100%)',
+      },
     },
   },
   plugins: [],

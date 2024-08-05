@@ -3,7 +3,7 @@ import Navbar from "../components/navbar/Navbar"
 
 const Register = () => {
   return (
-    <div className="custom-gradient ">
+    <div className="bg-content-gradient ">
       <RegisterForm />
     </div>
   )
