@@ -13,28 +13,30 @@ const RegisterFormAdmin = () => {
                 <section className="p-5 space-y-4">
                     <form className="w-full max-w-md">
                         <div className="flex flex-col md:flex-row md:items-center mb-6">
-                            <label className="block lg:text-right text-verde-oscuro font-bold mb-1 md:mb-0 pr-4 md:w-1/3" htmlFor="inline-full-name">
+                            <label className="block lg:text-right text-verde-oscuro font-bold mb-1 md:mb-0 pr-4 md:w-1/3" 
+                                htmlFor="inline-first-name">
                                 Nombre
                             </label>
                             <div className="md:w-2/3">
                                 <input  
                                     className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-verde-oscuro" 
-                                    id="inline-full-name" 
-                                    type="email" 
-                                    placeholder="mail@example.com"
+                                    id="inline-first-name" 
+                                    type="text" 
+                                    placeholder="ingrese su nombre"
                                 />
                             </div>
                         </div>
                         <div className="flex flex-col md:flex-row md:items-center mb-6">
-                            <label className="block lg:text-right text-verde-oscuro font-bold mb-1 md:mb-0 pr-4 md:w-1/3" htmlFor="inline-full-name">
+                            <label className="block lg:text-right text-verde-oscuro font-bold mb-1 md:mb-0 pr-4 md:w-1/3" 
+                                htmlFor="inline-last-name">
                                 Apellido
                             </label>
                             <div className="md:w-2/3">
                                 <input  
                                     className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-verde-oscuro" 
-                                    id="inline-full-name" 
-                                    type="email" 
-                                    placeholder="mail@example.com"
+                                    id="inline-last-name" 
+                                    type="text" 
+                                    placeholder="ingrese su apellido"
                                 />
                             </div>
                         </div>

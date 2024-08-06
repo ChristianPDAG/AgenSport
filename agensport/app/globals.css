@@ -19,5 +19,5 @@
 }
 
 .secondary_btn {
-  @apply rounded-full border border-verde-oscuro bg-verde-oscuro py-1.5 px-5 text-white transition-all hover:bg-verde-claro hover:text-verde-oscuro text-center font-bold font-sans flex items-center justify-center
+  @apply rounded-full border border-verde-oscuro bg-verde-oscuro py-1.5 px-5 text-white transition-all hover:bg-verde-claro hover:border-verde-claro hover:text-verde-oscuro text-center font-bold font-sans flex items-center justify-center
 }
