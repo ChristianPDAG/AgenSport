@@ -1,9 +1,9 @@
-import React from 'react'
+import RegisterFormUser from '@/app/components/form/RegisterFormUser'
 
 const RegisterUser = () => {
   return (
-    <div>
-      
+    <div className='bg-content-gradient'>
+      <RegisterFormUser/>
     </div>
   )
 }

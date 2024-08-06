@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         'verde-oscuro': '#00452e',
         'verde-claro': '#4ccf5e',
+        'verde-gris': '#9b9a77',
         //#3eb44c otra propuesta para el verde-claro
       },
       backgroundImage: {

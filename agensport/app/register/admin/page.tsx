@@ -1,9 +1,9 @@
-import React from 'react'
+import RegisterFormAdmin from '@/app/components/form/RegisterFormAdmin'
 
 const RegisterAdmin = () => {
   return (
-    <div>
-      
+    <div className='bg-content-gradient'>
+      <RegisterFormAdmin/>
     </div>
   )
 }

@@ -1,7 +1,8 @@
+import Link from "next/link"
 
 const RegisterForm = () => {
   return (
-    <div className="flex items-center justify-center relative py-40">
+    <div className="flex items-center justify-center relative min-h-screen">
       <div className="border-2 border-verde-oscuro rounded-xl shadow-2xl relative w-[80%] md:w-[80%] lg:w-[600px] my-6 h-auto  ">
         <div className="w-full h-auto rounded-xl relative flex flex-col bg-white">
             <header className="flex border-b p-2 justify-center font-sans text-verde-oscuro">
@@ -10,13 +11,13 @@ const RegisterForm = () => {
                 </div>
             </header>
             <section className="p-5 space-y-4">
-                <button className="w-full h-[54px] px-4 principal_btn">
+                <Link href="/register/admin" className="w-full h-[54px] px-4 principal_btn">
                     Como administrador
-                </button>
+                </Link>
                 
-                <button className="w-full h-[54px] px-4 secondary_btn">
+                <Link href="/register/user" className="w-full h-[54px] px-4 secondary_btn">
                     Como usuario
-                </button>
+                </Link>
   
             </section>
             
