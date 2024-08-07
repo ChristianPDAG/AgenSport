@@ -3,31 +3,38 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const FrameMenu: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
+interface MenuItemProps {
+  href: string;
+  label: string;
+}
+
+const MenuItem: React.FC<MenuItemProps> = ({ href, label }) => {
   const pathname = usePathname();
 
   return (
+    <Link
+      href={href}
+      className={`p-2 rounded-sm flex justify-center border-b border-white ${pathname === href ? 'bg-verde-oscuro text-white ' : ''}`}
+    >
+      {label}
+    </Link>
+  );
+};
+
+const FrameMenu: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
+  return (
     <div className="flex min-h-screen">
       {/* Sidebar */}
-      <div className="w-64 bg-gray-800 text-white flex flex-col">
-        <nav className="flex flex-col p-4 mt-5">
-          <Link href="/"
-            className={`p-2 ${pathname === '/' ? 'bg-gray-700' : ''}`}>Home</Link>
-          <Link 
-            href="/home"
-            className={`p-2 ${pathname === '/home' ? 'bg-gray-700' : ''}`}>Inicio</Link>
-          <Link 
-            href="/schedule"
-            className={`p-2 ${pathname === '/schedule' ? 'bg-gray-700' : ''}`}>Agenda</Link>
-          <Link 
-            href="/students"
-            className={`p-2 ${pathname === '/students' ? 'bg-gray-700' : ''}`}>Alumnos</Link>
-          <Link 
-            href="/trainers"
-            className={`p-2 ${pathname === '/trainers' ? 'bg-gray-700' : ''}`}>Entrenadores</Link>
-          <Link 
-            href="/accouting"
-            className={`p-2 ${pathname === '/accouting' ? 'bg-gray-700' : ''}`}>Contabilidad</Link>
+      <div className="w-64 bg-content-gradient text-verde-oscuro font-semibold  flex flex-col">
+        <nav className="flex flex-col mt-20">
+          <MenuItem href="/home" label="Inicio" />
+          <MenuItem href="/schedule" label="Agenda" />
+          <MenuItem href="/students" label="Alumnos" />
+          <MenuItem href="/trainers" label="Entrenadores" />
+          <MenuItem href="/discipline" label="Disciplinas" />
+          <MenuItem href="/accouting" label="Contabilidad" />
+
+          {/* ... other menu items */}
         </nav>
       </div>
       {/* Main Content */}
