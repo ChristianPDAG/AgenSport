@@ -14,7 +14,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ href, label }) => {
   return (
     <Link
       href={href}
-      className={`p-2 rounded-sm flex justify-center border-b border-white ${pathname === href ? 'bg-verde-oscuro text-white ' : ''}`}
+      className={`p-2 rounded-sm flex justify-center border border-white hover:bg-white hover:text-verde-oscuro ${pathname === href ? 'bg-verde-oscuro text-white ' : ''}`}
     >
       {label}
     </Link>
@@ -33,6 +33,14 @@ const FrameMenu: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
           <MenuItem href="/trainers" label="Entrenadores" />
           <MenuItem href="/discipline" label="Disciplinas" />
           <MenuItem href="/accouting" label="Contabilidad" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <MenuItem href="/accouting" label="Configuraciones" />
+          <MenuItem href="/accouting" label="Cerrar Sesión" />
 
           {/* ... other menu items */}
         </nav>
