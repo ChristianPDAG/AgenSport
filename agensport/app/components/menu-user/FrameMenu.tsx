@@ -1,25 +1,6 @@
 "use client"
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-
-interface MenuItemProps {
-  href: string;
-  label: string;
-}
-
-const MenuItem: React.FC<MenuItemProps> = ({ href, label }) => {
-  const pathname = usePathname();
-
-  return (
-    <Link
-      href={href}
-      className={`p-2 rounded-sm flex justify-center border border-white hover:bg-white hover:text-verde-oscuro ${pathname === href ? 'bg-verde-oscuro text-white ' : ''}`}
-    >
-      {label}
-    </Link>
-  );
-};
+import MenuItem from "./MenuItem";
 
 const FrameMenu: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
   return (
@@ -39,9 +20,8 @@ const FrameMenu: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
           <br />
           <br />
           <br />
-          <MenuItem href="/accouting" label="Configuraciones" />
-          <MenuItem href="/accouting" label="Cerrar Sesión" />
-
+          <MenuItem href="/configurations" label="Configuraciones" />
+          <button className="bg-red-900 text-white p-2 hover:bg-white hover:text-verde-oscuro">Cerrar sesión</button>
           {/* ... other menu items */}
         </nav>
       </div>
