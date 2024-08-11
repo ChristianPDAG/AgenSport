@@ -29,6 +29,7 @@ const TrainersPage = () => {
                     />
                   </div>
                   <div>
+                    <h1 className="flex justify-center p-4 text-2xl font-semibold text-verde-oscuro">Entrenadores</h1>
                     <TableTrainers/>
                   </div>
                 </div>
