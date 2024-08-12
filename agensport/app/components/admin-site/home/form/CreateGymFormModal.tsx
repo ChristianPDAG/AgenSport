@@ -1,3 +1,4 @@
+import FormItem from "@/app/components/form/FormItem"
 import Modal from "@/app/components/modals/Modal"
 
 const CreateGymFormModal = ({ isModalOpen, onClose }: { isModalOpen: boolean, onClose: () => void }) => {
@@ -9,103 +10,13 @@ const CreateGymFormModal = ({ isModalOpen, onClose }: { isModalOpen: boolean, on
             <div className="w-full h-auto rounded-xl relative flex flex-col">
                 <main>
                     <form action="" className="p-2">
-                        <div className="flex flex-col md:flex-row md:items-center mb-6">
-                            <label
-                                className="label_form_small"
-                                htmlFor="sportcenter-name"
-                            >
-                                Nombre
-                            </label>
-                            <div className="md:w-2/3">
-                                <input
-                                    className="input_form_small"
-                                    id="sportcenter-name"
-                                    type="text"
-                                    placeholder="ingrese nombre del centro"
-                                />
-                            </div>
-                        </div>
-                        
-                        <div className="flex flex-col md:flex-row md:items-center mb-6">
-                            <label
-                                className="label_form_small"
-                                htmlFor="sportcenter-address"
-                            >
-                                Ciudad
-                            </label>
-                            <div className="md:w-2/3">
-                                <input
-                                    className="input_form_small"
-                                    id="sportcenter-address"
-                                    type="text"
-                                    placeholder="Santiago"
-                                />
-                            </div>
-                        </div>
-                        <div className="flex flex-col md:flex-row md:items-center mb-6">
-                            <label
-                                className="label_form_small"
-                                htmlFor="sportcenter-address"
-                            >
-                                Comuna
-                            </label>
-                            <div className="md:w-2/3">
-                                <input
-                                    className="input_form_small"
-                                    id="sportcenter-comuna"
-                                    type="text"
-                                    placeholder=""
-                                />
-                            </div>
-                        </div>
-                        <div className="flex flex-col md:flex-row md:items-center mb-6">
-                            <label
-                                className="label_form_small"
-                                htmlFor="sportcenter-address"
-                            >
-                                Dirección
-                            </label>
-                            <div className="md:w-2/3">
-                                <input
-                                    className="input_form_small"
-                                    id="sportcenter-address"
-                                    type="text"
-                                    placeholder="Calle 1234 "
-                                />
-                            </div>
-                        </div>
-                        <div className="flex flex-col md:flex-row md:items-center mb-6">
-                            <label
-                                className="label_form_small"
-                                htmlFor="sportcenter-phone"
-                            >
-                                Número de Teléfono
-                            </label>
-                            <div className="md:w-2/3">
-                                <input
-                                    className="input_form_small"
-                                    id="sportcenter-phone"
-                                    type="tel"
-                                    placeholder="9-999-999"
-                                />
-                            </div>
-                        </div>
-                        <div className="flex flex-col md:flex-row md:items-center mb-6">
-                            <label
-                                className="label_form_small"
-                                htmlFor="sportcenter-address"
-                            >
-                                Correo electrónico
-                            </label>
-                            <div className="md:w-2/3">
-                                <input
-                                    className="input_form_small"
-                                    id="sportcenter-email"
-                                    type="text"
-                                    placeholder="mail@example.com"
-                                />
-                            </div>
-                        </div>
+                    <FormItem label="Nombre" htmlFor="sportcenter-name" type="text" placeholder="Centro deportivo"/>
+                    <FormItem label="Ciudad" htmlFor="sportcenter-city" type="text" placeholder="Santiago"/>
+                    <FormItem label="Comuna" htmlFor="sportcenter-address" type="text" placeholder="Santiago"/>
+                    <FormItem label="Dirección" htmlFor="sportcenter-address" type="text" placeholder="Avenida 123"/>
+                    <FormItem label="Número de telefóno" htmlFor="sportcenter-phone" type="tel" placeholder="9 9999 9999"/>
+                    <FormItem label="Correo electrónico" htmlFor="sportcenter-mail" type="mail" placeholder="mail@example.com"/>
+
                         <div className="flex flex-col md:flex-row md:items-center mb-6">
                             <label
                                 className="label_form_small"

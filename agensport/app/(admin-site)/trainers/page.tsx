@@ -16,6 +16,9 @@ const TrainersPage = () => {
       </div>
       <div className="flex-grow">
         <FrameContent>
+          <div>
+          <h1 className=" text-center p-4 text-2xl font-semibold text-verde-oscuro">Entrenadores</h1>
+          </div>
                 <div>
                   <div>
                   <button
@@ -28,8 +31,8 @@ const TrainersPage = () => {
                         onClose={() => setIsModalOpen(false)}
                     />
                   </div>
-                  <div>
-                    <h1 className="flex justify-center p-4 text-2xl font-semibold text-verde-oscuro">Entrenadores</h1>
+                  <div className="flex flex-col">
+                    
                     <TableTrainers/>
                   </div>
                 </div>

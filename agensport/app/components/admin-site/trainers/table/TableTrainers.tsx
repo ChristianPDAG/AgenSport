@@ -14,8 +14,8 @@ const TableTrainers = () => {
     ];
   
     return (
-      <div className="overflow-x-auto flex flex-col">
-        <table className="min-w-full bg-white border border-gray-200 text-xs">
+      <div className="overflow-x-auto flex flex-col flex-grow ">
+        <table className=" bg-white border border-gray-200 text-xs">
           <thead>
             <tr>
               <th className="py-2 px-2 border-b text-left">Rut</th>
