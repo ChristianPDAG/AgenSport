@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas</title>
+    <link rel="stylesheet" href="disciplinas.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="../agensport/public/logo_as.png" alt="Logo de la empresa" class="logo">
+        </div>
+        <h1 class="company-name">Disciplina</h1>
+        <div class="header-right">
+            <img src="../agensport/public/icono.png" alt="Icono de usuario" class="user-icon">
+        </div>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Agenda</a></li>
+            <li><a href="#">Alumnos</a></li>
+            <li><a href="#">Disciplinas</a></li>
+            <li><a href="#">Profesores</a></li>
+            <li><a href="#">Botón</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <button class="add-discipline">+ AGREGAR DISCIPLINA</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Disciplina</th>
+                    <th>Cant. Max Alumnos</th>
+                    <th>Cant. Actual Alumnos</th>
+                    <th>Profesor Principal</th>
+                    <th>Profesor Suplente</th>
+                    <th>Activo/Suspendido</th>
+                    <th>Disponibilidad</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="icon-star"></span></td>
+                    <td><span class="icon-settings" onclick="window.location.href='horario.html'"></span></td>
+                    <td><span class="icon-edit"></span></td>
+                    <td><span class="icon-delete"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>
+            <div class="advertisement">Espacio Publicitario</div>
+        </footer>    
+    </div>
+    <script src="disciplinas.js"></script>
+</body>
+</html>

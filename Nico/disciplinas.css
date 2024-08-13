@@ -1,0 +1,227 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Asegura que el body tenga al menos la altura del viewport */
+    background: #e0f7fa;
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#00796b; 
+    color: white;
+}
+
+/* Estilos para la sección izquierda del header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el logo y el nombre de la empresa */
+}
+
+.company-name {
+    font-size: 2.5em;
+    margin: 1%;
+    margin-right: 10%;
+}
+
+/* Estilos para la sección derecha del header */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 30px; /* Ajusta el tamaño del ícono de usuario según sea necesario */
+    height: auto;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    display: flex; /* Cambia a flexbox para alinear los elementos horizontalmente */
+    flex-direction: row; /* Establece la dirección horizontal */
+    background-color: #b2dfdb;
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    white-space: nowrap; /* Previene el ajuste de línea */
+    justify-content: center;/* para que se vean centrados*/
+    font-size: 25px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Usa flexbox para alinear los elementos de la lista horizontalmente */
+    gap: 10px; /* Espacio entre los elementos de la lista */
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #004d40;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #004d40;
+    color: white; 
+}
+
+/* Estilos para el contenido principal */
+.content {
+    flex: 1;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Estilos para el botón de agregar disciplina */
+.add-discipline {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #004d40; /* Fondo al pasar el cursor */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-discipline:hover {
+    background-color: #004d40; /* Fondo al pasar el cursor */
+    color: white;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #004d40; /* Fondo al pasar el cursor */
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Estilos para los íconos */
+.icon-star::before {
+    content: '★';
+    color: gold;
+}
+
+.icon-settings::before {
+    content: '⚙️';
+    cursor: pointer;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.icon-settings:hover::before {
+    color: #0056b3;
+}
+
+.icon-edit::before {
+    content: '✎';
+    cursor: pointer;
+    color: green;
+    transition: color 0.3s;
+}
+
+.icon-edit:hover::before {
+    color: darkgreen;
+}
+
+.icon-delete::before {
+    content: '🗑️';
+    cursor: pointer;
+    color: red;
+    transition: color 0.3s;
+}
+
+.icon-delete:hover::before {
+    color: darkred;
+}
+
+/* Estilos para el espacio publicitario */
+.advertisement {
+    background-color: #d0d0d0;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.advertisement {
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .add-discipline {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    thead th,
+    tbody td {
+        display: block;
+        width: 100%;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 10px;
+    }
+}

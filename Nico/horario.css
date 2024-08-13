@@ -1,0 +1,187 @@
+/* Estilos generales para el cuerpo y la página */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #e0f7fa; /* Fondo más suave */
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00796b; /* Color más oscuro para contraste */
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px; /* Tamaño del logo ajustado */
+    height: auto;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 2.5em;
+    margin: 1%;
+    margin-right: 10%;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 30px;
+    height: auto;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    background-color: #b2dfdb; /* Color más sutil para la barra lateral */
+    padding: 10px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #004d40; /* Color de texto más oscuro */
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #004d40; /* Fondo al pasar el cursor */
+    color: white; /* Color del texto al pasar el cursor */
+}
+
+/* Estilos para el contenido principal */
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Estilos para la tabla de horarios */
+.schedule-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #004d40; /* Color de fondo para los encabezados */
+    color: white;
+}
+
+.schedule-table td.time-slot {
+    background-color: #ffffff; /* Fondo blanco para los cuadros de horarios */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.schedule-table td.time-slot:hover {
+    background-color: #e0f2f1; /* Fondo al pasar el cursor */
+}
+
+.add-schedule {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-schedule:hover {
+    background-color: #00251a;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.advertisement {
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-left, .header-right {
+        margin-bottom: 10px;
+    }
+
+    .days {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .day {
+        width: 100%;
+    }
+
+    .hour {
+        flex-direction: column;
+    }
+
+    .add-schedule {
+        width: 100%;
+    }
+}
