@@ -1,6 +1,6 @@
 import UserNav from "./UserNav"
 import IconNav from "./IconNav"
-import MenuLink from "./MenuLink"
+import {MenuLinkOut} from "./MenuLink"
 
 const Navbar = () => {
   return (

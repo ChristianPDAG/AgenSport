@@ -8,7 +8,7 @@ import { useState } from "react";
 const StudentsPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className="flex">
+    <div className="flex min-h-screen">
       <div className="w-1/4">
         <FrameMenu/>
       </div>

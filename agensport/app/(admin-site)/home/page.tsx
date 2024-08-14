@@ -9,7 +9,7 @@ const HomeAdmin = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <div className="flex">
+        <div className="flex min-h-screen">
             <div className="w-1/4">
                 <FrameMenu />
             </div>
