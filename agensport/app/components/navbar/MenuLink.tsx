@@ -53,7 +53,9 @@ export const MenuLinkIn = () => {
           <MenuItemSmall href="/students" label="Alumnos" />
           <MenuItemSmall href="/trainers" label="Entrenadores" />
           <MenuItemSmall href="/discipline" label="Disciplinas" />
-          <MenuItemSmall href="/accouting" label="Contabilidad" />
+          <MenuItemSmall href="/plans" label="Planes" />
+          <MenuItemSmall href="/accouting" label="Contabilidad" />          
+
           <MenuItemSmall href="/configurations" label="Configuraciones" />
           <button className="bg-red-900 rounded-xl text-white hover:bg-white hover:text-verde-oscuro text-sm font-bold">Cerrar sesión</button>
 

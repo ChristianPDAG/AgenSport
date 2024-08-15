@@ -4,7 +4,7 @@ import FrameMenu from "@/app/components/menu-user/FrameMenu"
 const AccoutingPage = () => {
 
   return (
-    <div className="flex">
+    <div className="flex min-h-screen">
       <div className="w-1/4">
         <FrameMenu/>
       </div>

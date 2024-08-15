@@ -1,15 +1,18 @@
+import React from 'react'
+import FrameContentForms from '../../FrameContentForms'
 import FormItem from '@/app/components/form/FormItem'
 import Modal from '@/app/components/modals/Modal'
-import FrameContentForms from '../../FrameContentForms'
 
-const CreateStudentFormModal = ({ isModalOpen, onClose }: { isModalOpen: boolean, onClose: () => void }) => {
+const CreatePlanFormModal = ({ isModalOpen, onClose }: { isModalOpen: boolean, onClose: () => void }) => {
 
     const content = (
         <>
         <FrameContentForms>
-                    <FormItem label='Correo electrónico' htmlFor='student-mail' type='mail' placeholder='mail@example.com' />
-                    <FormItem label='Fecha de ingreso' htmlFor='student-startdate' type='date' placeholder='' />
-                    <FormItem label='Plan' htmlFor='student-plan' type='text' placeholder='' />
+        <FormItem label='Nombre' htmlFor='plan-name' type='mail' placeholder='Mensual básico' />
+        <FormItem label='Descripción' htmlFor='plan-description' type='test' placeholder='12 clases' />
+        <FormItem label='Cantidad de clases' htmlFor='plan-classes' type='number' placeholder='12' />
+        <FormItem label='Duración (días)' htmlFor='plan-days' type='number' placeholder='30' />
+        <FormItem label='Precio ($)' htmlFor='plan-price' type='number' placeholder='20000' />
                     <div className="flex flex-col md:flex-row md:items-center">
                     <div className="md:w-1/3"></div>
                     <div className="md:w-2/3">
@@ -26,11 +29,11 @@ const CreateStudentFormModal = ({ isModalOpen, onClose }: { isModalOpen: boolean
     <Modal
         isOpen={isModalOpen}
         onClose={onClose}
-        title="Registre un nuevo alumno!"
+        title="Registre un nuevo plan!"
     >
         {content}
           </Modal>
   )
 }
 
-export default CreateStudentFormModal
+export default CreatePlanFormModal

@@ -1,15 +1,12 @@
 import FormItem from "@/app/components/form/FormItem"
 import Modal from "@/app/components/modals/Modal"
+import FrameContentForms from "../../FrameContentForms"
 
 const CreateGymFormModal = ({ isModalOpen, onClose }: { isModalOpen: boolean, onClose: () => void }) => {
 
     const content = (
         <>
-    <div className="flex items-center justify-center relative ">
-        <div className="border-2 border-verde-oscuro rounded-xl relative w-[80%] md:w-[80%] lg:w-[600px] h-auto">
-            <div className="w-full h-auto rounded-xl relative flex flex-col">
-                <main>
-                    <form action="" className="p-2">
+            <FrameContentForms>
                     <FormItem label="Nombre" htmlFor="sportcenter-name" type="text" placeholder="Centro deportivo"/>
                     <FormItem label="Ciudad" htmlFor="sportcenter-city" type="text" placeholder="Santiago"/>
                     <FormItem label="Comuna" htmlFor="sportcenter-address" type="text" placeholder="Santiago"/>
@@ -96,14 +93,9 @@ const CreateGymFormModal = ({ isModalOpen, onClose }: { isModalOpen: boolean, on
                                 </button>
                             </div>
                         </div>
-                    </form>
-                </main>
-            </div>
-        </div>
-    </div>
-</>
-
-        )
+            </FrameContentForms>
+        </>
+    )
         
   return (  
     <Modal 

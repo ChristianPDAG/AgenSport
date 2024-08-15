@@ -19,12 +19,7 @@ const SchedulePage = () => {
           </div>
           <div>
             <div>
-              <button
-                onClick={() => setIsModalOpen(!isModalOpen)}
-                className="principal_btn w-full transition-colors mb-4"
-                >
-                +Crear Disciplina
-              </button>
+              
             </div>
           </div>
         </FrameContent>

@@ -1,11 +1,11 @@
 "use client"
 
-import CreateDisciplineFormModal from "@/app/components/admin-site/discipline/form/CreateDisciplineFormModal";
 import FrameContent from "@/app/components/admin-site/FrameContent"
+import CreatePlanFormModal from "@/app/components/admin-site/plans/form/CreatePlanFormModal";
 import FrameMenu from "@/app/components/menu-user/FrameMenu"
 import { useState } from "react";
 
-const DisciplinePage = () => {
+const PlanPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -16,7 +16,7 @@ const DisciplinePage = () => {
       <div className="flex-grow">
         <FrameContent>
           <div className="flex flex-col">
-            <h1 className=" text-center p-4 text-2xl font-semibold text-verde-oscuro">Disciplinas</h1>
+            <h1 className=" text-center p-4 text-2xl font-semibold text-verde-oscuro">Planes</h1>
           </div>
           <div>
             <div>
@@ -24,12 +24,12 @@ const DisciplinePage = () => {
                 onClick={() => setIsModalOpen(!isModalOpen)}
                 className="principal_btn w-full transition-colors mb-4"
                 >
-                +Crear Disciplina
+                +Crear Plan
               </button>
               <br />
-              <CreateDisciplineFormModal 
-                  isModalOpen={isModalOpen}
-                  onClose={() => setIsModalOpen(false)}              
+              <CreatePlanFormModal 
+                isModalOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
               />
             </div>
           </div>
@@ -39,4 +39,4 @@ const DisciplinePage = () => {
   )
 }
 
-export default DisciplinePage
+export default PlanPage

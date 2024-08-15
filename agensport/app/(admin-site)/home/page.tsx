@@ -21,7 +21,7 @@ const HomeAdmin = () => {
                     <button
                         onClick={() => setIsModalOpen(!isModalOpen)}
                         className="principal_btn w-full transition-colors">
-                        +Crear Gimnasio
+                        +Crear Centro Deportivo
                     </button>
                     <br />
                     <CreateGymFormModal

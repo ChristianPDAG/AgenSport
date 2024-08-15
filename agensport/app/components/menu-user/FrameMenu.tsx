@@ -14,6 +14,7 @@ const FrameMenu: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
           <MenuItem href="/students" label="Alumnos" />
           <MenuItem href="/trainers" label="Entrenadores" />
           <MenuItem href="/discipline" label="Disciplinas" />
+          <MenuItem href="/plans" label="Planes" />
           <MenuItem href="/accouting" label="Contabilidad" />
         </div>
         <div className="">
